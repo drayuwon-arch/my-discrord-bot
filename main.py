@@ -29,7 +29,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 # Вставь сюда данные (ID сервера, ID канала "Основа-1" и Токен бота)
 GUILD_ID = 1560639563502985326    # <-- ID сервера Va1lka 26.3
 CHANNEL_ID = 1560639565889409208  # <-- ID канала Основа-1
-TOKEN = MTU2MTI2OTkzNzQ1OTQzNzU2OA.GwuLLe.LJOk9yoPDcwqKl3XhpCHzBbI2CFzY3PkHozSTo         # <-- Токен бота
+TOKEN = os.getenv("BOT_TOKEN")         # <-- Токен бота
 
 @bot.event
 async def on_ready():
